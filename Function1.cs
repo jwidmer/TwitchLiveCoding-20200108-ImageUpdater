@@ -20,8 +20,8 @@ namespace ImageUpdater
             //get the last run time 
             DateTime lastruntime = DateTime.Now;
 
-            //try to get the last run time from Azure Storage (or if it doesn’t exist use DateTime.Now)
-            string connectionString = $"DefaultEndpointsProtocol=https;AccountName=imageuploader20200108;AccountKey=rqqwMVN55y+yrvTDVHcP5RVWhLn8xTD1aHZS7f/StP0avz9ONbxKQLuqpWDCkQP0V3tC8A0fO8X/xBy2bTf2rQ==;EndpointSuffix=core.windows.net";
+            //try to get the last run time from Azure Storage (or if it doesnâ€™t exist use DateTime.Now)
+            string connectionString = $"<AZURE_STORAGE_CONNECTION_STRING>";
 
             // Setup the connection to the storage account
             CloudStorageAccount storageAccount = CloudStorageAccount.Parse(connectionString);
